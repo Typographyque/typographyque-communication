@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <!-- ===============================================-->
+    <!--    STYLESHEETS-->
+    <!-- ===============================================-->
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
+
+    <link href="{{ asset('lib/owl.carousel/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/theme.css') }}" rel="stylesheet">
+
+    {% block stylesheets %}{% endblock %}
+
+</head>
+<body class="has-sidemenu overflow-hidden-x">
+
+
+<!-- ===============================================-->
+<!--    Main Content-->
+<!-- ===============================================-->
+<main class="main min-vh-100" id="top">
+
+    <!-- ============================================-->
+    <!-- <section> CARROUSEL PORTFOLIO home ============================-->
+    <section class="bg-11 overflow-hidden" id="">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 mb-4 mb-md-6">
+                    <h2 class="text-center"><span class="text-underline">portfolio</span></h2>
+                </div>
+                <div class="col-12">
+                    <div class="carousel">
+                        <a class="border border-200" href="{{ path('portfolio') }}">
+                            <img class="rounded" src="{{ asset('img/portfolio/ma_cuisine_01.jpg') }}" alt="" />
+                        </a>
+                        <a class="border border-200" href="{{ path('portfolio') }}">
+                            <img class="rounded" src="{{ asset('img/portfolio/royaume01.jpg') }}" alt="" />
+                        </a>
+                        <a class="border border-200" href="{{ path('portfolio') }}">
+                            <img class="rounded" src="{{ asset('img/portfolio/mamma-roma_01.jpg') }}" alt="" />
+                        </a>
+                        <a class="border border-200" href="{{ path('portfolio') }}">
+                            <img class="rounded" src="{{ asset('img/portfolio/passerelle_01.jpg') }}" alt="" />
+                        </a>
+                        <a class="border border-200" href="{{ path('portfolio') }}">
+                            <img class="rounded" src="{{ asset('img/portfolio/mad-maximes_01.jpg') }}" alt="" />
+                        </a>
+                        <a class="border border-200" href="{{ path('portfolio') }}">
+                            <img class="rounded" src="{{ asset('img/portfolio/question-indienne_01.jpg') }}" alt="" />
+                        </a>
+                        <a class="border border-200" href="{{ path('portfolio') }}">
+                            <img class="rounded" src="{{ asset('img/portfolio/fredd_01.jpg') }}" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <!-- ============================================-->
+    <!-- <section> carrousel services ============================-->
+    <section class="py-0">
+        <div class="container-fluid">
+            <div class="row h-full align-items-center border-bottom border-300">
+                <div class="col-lg-6 px-0 order-lg-2" data-zanim-lg='{"animation":"slide-left","delay":0.4}' data-zanim-trigger="scroll">
+                    <div class="owl-carousel owl-theme owl-dots-inner owl-theme-white" data-options='{"items":1,"autoplay":true,"loop":true,"autoplayHoverPause":true,"animateOut":"fadeOut","nav":true}' data-zanim-lg='{"animation":"zoom-out","delay":0}' data-zanim-trigger="scroll">
+                        <div class="vh-lg-100 py-9">
+                            <div class="bg-holder" style="background-image:url({{ asset('img/headers/header-design.jpg') }});">
+                            </div>
+                            <!--/.bg-holder-->
+
+                        </div>
+                        <div class="vh-lg-100 py-9">
+                            <div class="bg-holder" style="background-image:url({{ asset('img/headers/header-edition.jpg') }});">
+                            </div>
+                            <!--/.bg-holder-->
+
+                        </div>
+                        <div class="vh-lg-100 py-9">
+                            <div class="bg-holder" style="background-image:url({{ asset('img/headers/header-photo.jpg') }});">
+                            </div>
+                            <!--/.bg-holder-->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 bg-white py-7 py-md-8">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-10 text-black text-center text-lg-left" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <h4 class="text-uppercase font-weight-normal ls text-white bg-dark p-1 rounded d-inline-block" data-zanim-xs='{"delay":0.1}'>Typographyque</h4>
+                            </div>
+                            <div class="overflow-hidden">
+                                <h1 class="display-3 fs-5 fs-sm-6" data-zanim-xs='{"delay":0.2}'><span class="text-underline">nos services</span>
+                                    <br/><span class="font-weight-light"></span></h1>
+                            </div>
+                            <div class="overflow-hidden">
+                                <p class="text-900 fs-0 mt-3 mt-md-5" data-zanim-xs='{"delay":0.3}'>Notre mission est de vous guider <br/>pour que chaque mot, chaque image, chaque action <br/>vous rapprochent de vos objectifs.</p>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="d-lg-flex align-items-center font-weight-bold ls mt-3 mt-md-5 text-uppercase" data-zanim-xs='{"delay":0.4}'>
+                                    <h6 class="mb-lg-0">Suivez nous :</h6>
+                                    <div class="overflow-hidden">
+                                        <a href="#"><span class="fab fa-facebook text-dark mr-2 ml-3 fs-0"></span></a>
+                                        <a href="#"><span class="fab fa-twitter text-dark mr-2 fs-0"></span></a>
+                                        <a href="#"><span class="fab fa-google-plus-g text-dark fs-0"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+</main>
+
+<!-- INNOVELARIUM -->
+<div class="col-12 col-sm-6 sortable-item p-2 graphisme">
+    <div class="embed-responsive embed-responsive-4by3">
+        <div class="owl-carousel owl-theme owl-dots-inner owl-theme-white embed-responsive-item" data-options='{"items":1,"autoplay":true,"loop":true,"animateOut":"fadeOut","nav":true}' data-zanim-xs='{"animation":"zoom-in","delay":0.8}'>
+            <img class="w-100 fit-cover rounded" src="{{ asset('img/portfolio/innovelarium01.jpg') }}" alt="" />
+            <img class="w-100 fit-cover rounded" src="{{ asset('img/portfolio/innovelarium02.jpg') }}" alt="" />
+            <img class="w-100 fit-cover rounded" src="{{ asset('img/portfolio/innovelarium03.jpg') }}" alt="" />
+        </div>
+    </div>
+</div>
+
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/popper.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/plugins.min.js') }}"></script>
+
+<script src="{{ asset('lib/owl.carousel/owl.carousel.js') }}/"></script>
+
+<script src="{{ asset('js/owl.carousel.js') }}"></script>
+
+<!--<script src="{{ asset('js/theme-ty.js') }}"></script>-->
+
+<script src="{{ asset('js/theme.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos services{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-0" id="split-static">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 px-0 order-lg-2">
+                    <div class="sticky-top vh-lg-100 py-9">
+                        <div class="bg-holder" style="background-image:url({{ asset('img/headers/header-design.jpg') }});" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"zoom-out-slide-left","delay":0.4}'>
+                        </div>
+                        <!--/.bg-holder-->
+
+                    </div>
+                </div>
+                <div class="col-lg-6 bg-white py-6">
+                    <div class="row h-100 align-items-center justify-content-center">
+                        <div class="col-lg-10" data-zanim-timeline='{"delay":0.4}' data-zanim-trigger="scroll">
+                            <h1 class="font-weight-light text-uppercase fs-2 fs-sm-4 fs-lg-2 fs-xl-4"><span class="d-block overflow-hidden"><span class="d-block mb-1" data-zanim-xs='{"delay":0.1}'>Typographyque</span></span><span class="d-block overflow-hidden"><span class="d-inline-block" data-zanim-xs='{"delay":0.2}'><span class="display-4 fs-3 fs-sm-5 fs-lg-3 fs-xl-5 font-weight-black">nos services</span></span>
+                    </span></h1>
+                            <div class="overflow-hidden">
+                                <h6 class="font-weight-normal ls fs-0 text-uppercase mt-4 text-700" data-zanim-xs='{"delay":0.4}'>Notre mission est de vous guider <br/>pour que chaque mot, chaque image, chaque action <br/>vous rapprochent de vos objectifs.</h6>
+                            </div>
+                            <div data-zanim-xs='{"delay":0.5}'>
+                                <a class="btn btn-danger btn-sm mt-5 mt-sm-7" href="{{ path('contact') }}">contactez-nous</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <!-- ============================================-->
+    <!-- <section> SEVICES ============================-->
+    <section id="default-pricing-plan">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 mb-7 text-center">
+                    <h2 class="fs-3 fs-sm-4 text-underline mb-3">nos expertises</h2>
+                    <p class="text-500 font-italic">Typographyque est une agence de communication située à Toulouse. Nos services comprennent la conception et développement de sites web, le référencement SEO, la gestion de contenus et réseaux sociaux, la création graphique et l’image de marque, ainsi que la réalisation de tout type de publication. </p>
+                </div>
+            </div>
+            <div class="row justify-content-center justify-content-md-start text-center text-md-left">
+
+                <!-- EDITION -->
+                <div class="col-10 col-md-6 col-lg-4 pr-md-4 pr-lg-6" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                    <img class="mb-3" src="{{ asset('img/icons/edition.svg') }}" alt="" width="120" height="120" />
+                    <div class="overflow-hidden">
+                        <h2 data-zanim-xs='{"delay":0.1}'>Édition</h2>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p data-zanim-xs='{"delay":0.4}'>Conception, mise en page et déclinaison de documents. Suivi éditorial, correction, illustration… Typographyque vous accompagne dans toutes les étapes de création de vos documents.</p>
+                    </div>
+                    <div class="oveflow-hidden">
+                        <ul class="style-check pl-0" data-zanim-xs='{"delay":0.4}'>
+                            <li class="d-inline-block d-md-block">Livres</li>
+                            <li class="d-inline-block d-md-block">Catalogues</li>
+                            <li class="d-inline-block d-md-block">Programmes</li>
+                            <li class="d-inline-block d-md-block">Magazines</li>
+                            <li class="d-inline-block d-md-block"></li>
+                            <li class="d-inline-block d-md-block">Documents commerciaux</li>
+                            <li class="d-inline-block d-md-block">Plaquettes et pochettes</li>
+                        </ul>
+                    </div>
+                    <div class="oveflow-hidden">
+                        <div data-zanim-xs='{"delay":0.5}'>
+                            <a class="btn btn-link pl-md-0 text-black font-weight-black" href="#">portfolio<span class="d-inline-block">&xrarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GRAPHISME -->
+                <div class="col-10 col-md-6 col-lg-4 px-lg-4 mt-6 mt-md-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                    <img class="mb-3" src="{{ asset('img/icons/graphisme.svg') }}" alt="" width="120" height="120" />
+                    <div class="overflow-hidden">
+                        <h2 data-zanim-xs='{"delay":0.1}'>Graphisme</h2>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p data-zanim-xs='{"delay":0.4}'>Un logotype, une carte de visite ou l’image de marque complète pour votre activité. Typographyque vous propose la solution idéale pour votre communication visuelle.</p>
+                    </div>
+                    <div class="oveflow-hidden">
+                        <ul class="style-check pl-0" data-zanim-xs='{"delay":0.4}'>
+                            <li class="d-inline-block d-md-block">Logotypes</li>
+                            <li class="d-inline-block d-md-block">Identité de marque</li>
+                            <li class="d-inline-block d-md-block">Supports de communication</li>
+                            <li class="d-inline-block d-md-block">Design éditorial</li>
+                        </ul>
+                    </div>
+                    <div class="oveflow-hidden">
+                        <div data-zanim-xs='{"delay":0.5}'>
+                            <a class="btn btn-link pl-md-0 text-black font-weight-black" href="#">portfolio<span class="d-inline-block">&xrarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEB -->
+                <div class="col-10 col-md-6 col-lg-4 pl-lg-6 mt-6 mt-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                    <img class="mb-3" src="{{ asset('img/icons/web.svg') }}" alt="" width="120" height="120" />
+                    <div class="overflow-hidden">
+                        <h2 data-zanim-xs='{"delay":0.1}'>Web</h2>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p data-zanim-xs='{"delay":0.4}'>Avec des designs originaux, l’intégration dans les réseaux sociaux, la création de contenu, le référencement pour les moteurs de recherche…  Typographyque déploie une stratégie numérique performante et adaptée à vos besoins.</p>
+                    </div>
+
+                    <div class="oveflow-hidden">
+                        <ul class="style-check pl-0" data-zanim-xs='{"delay":0.4}'>
+                            <li class="d-inline-block d-md-block">Site vitrine</li>
+                            <li class="d-inline-block d-md-block">Site E-commerce</li>
+                            <li class="d-inline-block d-md-block">Réseaux sociaux</li>
+                            <li class="d-inline-block d-md-block">Stratégie numérique</li>
+                            <li class="d-inline-block d-md-block">Référencement SEO</li>
+                            <li class="d-inline-block d-md-block">Gestion de contenus</li>
+                        </ul>
+                    </div>
+
+                    <div class="oveflow-hidden">
+                        <div data-zanim-xs='{"delay":0.5}'>
+                            <a class="btn btn-link pl-md-0 text-black font-weight-black" href="#">portfolio<span class="d-inline-block">&xrarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+    <!-- ============================================-->
+    <!-- <section> CTA ============================-->
+    <section class="overflow-hidden py-0" id="default-cta-2">
+
+        <div class="container">
+            <div class="position-absolute overflow-hidden a-0">
+                <div class="bg-holder overlay overlay-2 rounded" style="background-image:url({{ asset('img/headers/header-47.jpg') }});" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"zoom-out","delay":0}'>
+                </div>
+                <!--/.bg-holder-->
+
+            </div>
+            <div class="row align-items-center justify-content-center text-center py-8">
+                <div class="col-lg">
+                    <h2 class="mb-0 text-white">Vous avez<br/>beaucoup à dire</h2>
+                    <a class="btn btn-outline-light btn-sm mt-4 border-2x" href="{{ path('contact') }}">parlons de vos projets</a>
+                </div>
+                <div class="col-lg-7 px-lg-8 mt-6 mt-lg-0">
+                    <div class="owl-carousel owl-theme owl-nav-outer" data-options='{"dots":false,"nav":true,"items":1,"autoplay":true,"loop":true,"autoplayHoverPause":true}'>
+                        <div class="item">
+                            <h4 class="text-serif font-weight-light text-white font-italic fs-1 fs-sm-2 mb-4">Ensemble, nous allons trouver la solution adaptée à vos besoins</h4>
+                        </div>
+                        <div class="item">
+                            <h4 class="text-serif font-weight-light text-white font-italic fs-1 fs-sm-2 mb-4">Imprimé, numérique, multimédia, nous faisons tout !</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+    <!-- ============================================-->
+    <!-- <section> METHODE ============================-->
+    <section class="border-top border-300" id="default-process">
+
+        <div class="container">
+            <div class="row justify-content-center text-center mb-6">
+                <div class="col-lg-6">
+                    <h2 class="fs-3 fs-sm-4 text-underline mb-3">Notre méthode</h2>
+                    <p class="text-500 font-italic">Nous vous accompagnons dans le déploiement intégral de votre projet. De la conception à la diffusion en passant par les différentes étapes de création, développement et fabrication. Grâce à notre expérience et notre réseau de professionnels (développeurs, graphistes, rédacteurs, correcteurs, traducteurs, photographes, illustrateurs, documentalistes…), nous sommes en mesure d’assurer l’ensemble des étapes nécessaires à la réalisation de tout type de publication.</p>
+                    <hr class="hr-short mt-5 border-300" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pl-lg-7">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6 order-lg-2 text-center">
+                            <img class="img-fluid" src="{{ asset('img/illustration/process-01.svg') }}" alt="" width="400" />
+                        </div>
+                        <div class="col-lg-6 border-lg-left border-lg-bottom border-300 pb-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
+                            <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">01</span>
+                                <h3>analiser</h3>
+                                    <h4 class="text-serif font-weight-light font-italic mb-0 text-600" data-zanim-xs="{&quot;delay&quot;:0.2}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">un plan de communication intelligent</h4>
+                                <p>L’analyse commence par connaître votre projet et vos objectifs. Nous étudions les forces, faiblesses, opportunités et menaces qui se présentent, identifions les ressources et les cibles potentielles. Ensuite nous définissons un plan stratégique, avec des priorités et des objectifs ponctuels.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 border-lg-right border-lg-bottom border-300 text-center py-lg-8">
+                            <img class="img-fluid" src="{{ asset('img/illustration/process-02.svg') }}" alt="" width="400" />
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0 mb-8 mb-lg-0 my-lg-8">
+                            <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">02</span>
+                                <h3>concevoir</h3>
+                                <h4 class="text-serif font-weight-light font-italic mb-0 text-600" data-zanim-xs="{&quot;delay&quot;:0.2}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">une image soignée</h4>
+                                <p>Cette étape consiste en la conception de l’idée globale pour consolider votre image et vous démarquer. Construction du discours, idées-forces, charte graphique, logotype, image de marque sont les éléments indispensables sur lesquels va s’appuyer tout le plan de communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 order-lg-2 text-center align-self-center">
+                            <img class="img-fluid" src="{{ asset('img/illustration/process-03.svg') }}" alt="" width="400" />
+                        </div>
+                        <div class="col-lg-6 border-lg-left border-lg-bottom border-300 py-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
+                            <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">03</span>
+                                <h3>développer</h3>
+                                <h4 class="text-serif font-weight-light font-italic mb-0 text-600" data-zanim-xs="{&quot;delay&quot;:0.2}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">des outils de communication adaptés</h4>
+                                <p>Avec le plan et une identité bien définis, c’est le moment de commencer la réalisation des supports de communication. Une carte de visite, un catalogue ou un site web complet : notre équipe (développeurs, graphistes, rédacteurs, illustrateurs, etc.) s’occupe de la création de contenus et de leur mise en forme.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row overflow-hidden pb-1">
+                        <div class="col-lg-6 border-lg-right border-300 text-center py-lg-8">
+                            <img class="img-fluid" src="{{ asset('img/illustration/process-04.svg') }}" alt="" width="400" />
+                        </div>
+                        <div class="col-lg-6 align-self-center mt-4 mt-lg-0 mt-lg-8">
+                            <div class="process-item process-item-last ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">04</span>
+                                <h3>communiquer</h3>
+                                <h4 class="text-serif font-weight-light font-italic mb-0 text-600" data-zanim-xs="{&quot;delay&quot;:0.2}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">un message clair et efficace</h4>
+                                <p>Avec les outils que nous avons construits ensemble, vous êtes prêts pour conquérir votre public. La diffusion est l’étape primordiale de toute action de communication. Référencement SEO, réseaux sociaux, publicité, campagnes d’emailing sont quelques-unes des possibilités qui s’offrent à vous.</p>
+                                <a class="btn btn-outline-dark btn-sm mt-3" href="{{ path('portfolio') }}">Voir le portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section id="default-cta-3">
+
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2>propulsez vos projets</h2>
+                    <p class="px-lg-6 px-md-5">Toute une équipe aux compétences et expériences multiples est à votre écoute.</p>
+                    <a class="btn btn-outline-dark rounded-capsule mt-4" href="{{ path('contact') }}">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+
+{% endblock %}

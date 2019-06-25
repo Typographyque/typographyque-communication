@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-0" id="page-contact">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 bg-white pt-8 pb-4 pt-lg-8">
+                    <div class="row h-100 align-items-center justify-content-center">
+                        <div class="col-lg-8" data-zanim-lg='{"animation":"slide-left","delay":0.6}' data-zanim-trigger="scroll">
+                            <h1 class="text-underline d-inline-block mb-4 mb-lg-6">contact</h1>
+                            <p class="font-weight-bold mb-0">Adresse:<span class="ml-2 font-weight-normal">2, rue de Reims - 31 400 - Toulouse</span></p>
+                            <p class="font-weight-bold mb-0">Téléphone:<span class="ml-2 font-weight-normal"><a class="text-700" href="tel:+33781453171">07 81 45 31 71</a></span></p>
+                            <p class="font-weight-bold mb-4">E-mail:<span class="ml-2 font-weight-normal font-italic"><a class="text-700" href="mailto:info@typographyque.com">info@typographyque.com</a></span></p>
+                            <div class="mt-3">
+                                <a class="btn btn-dark btn-sm mr-2" href="#"><span class="fab fa-twitter" data-fa-transform="grow-6"></span></a>
+                                <a class="btn btn-dark btn-sm mr-2" href="#"><span class="fab fa-facebook-f" data-fa-transform="grow-6"></span></a>
+                                <a class="btn btn-dark btn-sm mr-2" href="#"><span class="fab fa-google-plus-g" data-fa-transform="grow-6"></span></a>
+                                <a class="btn btn-dark btn-sm" href="#"><span class="fab fa-linkedin-in" data-fa-transform="grow-6"></span></a>
+                            </div>
+                            <h3 class="mt-7">Parlez-nous de vos projets</h3>
+
+                            <!-- ============================================-->
+                            <!-- <form> contact =============================-->
+
+                            {% for message in app.flashes('success') %}
+                                <div class="alert alert-success">
+                                    <p>{{ message }}</p>
+                                </div>
+                            {% endfor %}
+
+                            {% if not form.vars.valid %}
+                                <div class="alert alert-danger">
+                                    <p>Veuillez vérifier que les champs du formulaire soient bien remplis !</p>
+                                </div>
+                            {% endif %}
+                            {{ form_start(form, { 'attr': {'class': 'zform mt-4'} }) }}
+                                {{ form_row(form.firstname) }}
+                                {{ form_row(form.lastname, { 'attr': {'class': 'form-control border-300', 'placeholder':'Votre nom'} }) }}
+                                {{ form_row(form.phone, { 'attr': {'class': 'form-control border-300', 'placeholder':'Téléphone'} }) }}
+                                {{ form_row(form.email, { 'attr': {'class': 'form-control border-300', 'placeholder':'E-mail'} }) }}
+                                {{ form_row(form.message, { 'attr': {'class': 'form-control border-300', 'rows' : '11', } }) }}
+
+                                <button class="btn btn-block btn-dark mt-4" type="submit">Envoyer <span class="fa fa-paper-plane ml-1"></span></button>
+                                <div class="zform-feedback mt-4"></div>
+                            {{ form_end(form) }}
+
+                            <!-- ============================================-->
+                            <!-- End <form> contact =========================-->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0">
+                    <div class="sticky-top ovrflow-hidden-y">
+                        <div class="googlemap min-vh-100 d-none d-lg-block" data-latlng="43.59348477200863,1.458896964053224" data-pov='{"heading":120,"pitch":0}' data-scrollwheel="false" data-icon="assets/images/map-marker.png" data-zoom="1" data-theme="streetview" data-zanim-lg='{"animation":"zoom-out-slide-left","delay":0.4}'
+                             data-zanim-trigger="scroll"></div>
+                        <!--Mobile Fallback-->
+                        <div class="googlemap min-vh-50 d-lg-none" data-latlng="43.59348477200863,1.458896964053224" data-pov='{"heading":75,"pitch":0}' data-scrollwheel="false" data-icon="assets/img/map-marker.png" data-zoom="17" data-theme="Default">
+                            <div class="marker-content py-3">
+                                <h5>Typographyque</h5>
+                                <p>2, rue de Reims
+                                    <br>31400 | Toulouse</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6SHyDT7PjFPYhaXkhD5u1e7pF1ETWHgo&callback=initMap" async></script>
+
+
+{% endblock %}
+
