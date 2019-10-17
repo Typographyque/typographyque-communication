@@ -6116,7 +6116,7 @@ a.close.disabled {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1050;
+  z-index: 10050;
   display: none;
   width: 100%;
   height: 100%;
@@ -6235,10 +6235,10 @@ a.close.disabled {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1040;
+  z-index: 10040;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: #1c1c1c;
 }
 
 .modal-backdrop.fade {
@@ -6246,7 +6246,7 @@ a.close.disabled {
 }
 
 .modal-backdrop.show {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .modal-header {
@@ -13398,6 +13398,76 @@ input.zinput-file[type='file'] {
 }
 
 /*-----------------------------------------------
+|   Times Icon
+-----------------------------------------------*/
+.times-icon {
+  position: relative;
+  outline: none;
+}
+
+.times-icon:before, .times-icon:after {
+  right: 0;
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.times-icon:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.times-icon:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.times-icon:hover, .times-icon:focus {
+  outline: none;
+}
+
+.modal-xs {
+  width: 12.5rem;
+}
+
+.modal-open {
+  overflow: auto;
+  padding-left: 0 !important;
+}
+
+.modal-open .sticky-top {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.modal.fade-in .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade-in .modal-dialog {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+[dir="rtl"] .modal-open {
+  padding-right: 0 !important;
+}
+
+/*-----------------------------------------------
 |   Navigation bar
 -----------------------------------------------*/
 .navbar {
@@ -13484,6 +13554,15 @@ input.zinput-file[type='file'] {
   .fancybox-toolbar {
     left: 5.375rem;
   }
+}
+
+.fancybox-active {
+  overflow: auto !important;
+  margin-left: 0 !important;
+}
+
+[dir="rtl"] .fancybox-active {
+  margin-right: 0 !important;
 }
 
 /*-----------------------------------------------
@@ -13607,53 +13686,6 @@ input.zinput-file[type='file'] {
 .progress-line .progressbar-text .value {
   left: 0;
   position: absolute;
-}
-
-/*-----------------------------------------------
-|   Remodal [video lightbox]
------------------------------------------------*/
-.remodal-video {
-  padding: 0;
-  min-width: 75%;
-}
-
-.remodal-overlay {
-  background-color: rgba(28, 28, 28, 0.9);
-}
-
-.remodal-close {
-  top: -2rem;
-  left: -2rem;
-  right: auto;
-}
-
-.remodal-close:hover, .remodal-close:focus {
-  color: #fff;
-}
-
-.lb-data .lb-caption, .lb-data .lb-number {
-  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.remodal-video .embed-responsive {
-  background-color: #000;
-}
-
-/*-----------------------------------------------
-|   Remodal [Language selection]
------------------------------------------------*/
-.remodal-select-language {
-  max-width: 12.5rem;
-  padding: 0;
-}
-
-.remodal-select-language .remodal-close {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: auto;
-  padding: 0.5rem;
-  cursor: pointer;
 }
 
 /*-----------------------------------------------
@@ -14517,6 +14549,10 @@ label,
   right: 0;
   height: 100%;
   width: 100%;
+}
+
+.overlay-z-index-1:before {
+  z-index: 1;
 }
 
 .bg-fixed {

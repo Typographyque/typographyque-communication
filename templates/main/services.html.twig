@@ -55,7 +55,7 @@
             <div class="row justify-content-center justify-content-md-start text-center text-md-left">
 
                 <!-- EDITION -->
-                <div class="col-10 col-md-6 col-lg-4 pr-md-4 pr-lg-6" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                <div class="col-10 col-md-6 col-lg-4 px-lg-4 mt-6 mt-md-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                     <img class="mb-3" src="{{ asset('img/icons/edition.svg') }}" alt="" width="120" height="120" />
                     <div class="overflow-hidden">
                         <h2 data-zanim-xs='{"delay":0.1}'>Édition</h2>
@@ -65,18 +65,17 @@
                     </div>
                     <div class="oveflow-hidden">
                         <ul class="style-check pl-0" data-zanim-xs='{"delay":0.4}'>
-                            <li class="d-inline-block d-md-block">Livres</li>
-                            <li class="d-inline-block d-md-block">Catalogues</li>
-                            <li class="d-inline-block d-md-block">Programmes</li>
-                            <li class="d-inline-block d-md-block">Magazines</li>
-                            <li class="d-inline-block d-md-block"></li>
-                            <li class="d-inline-block d-md-block">Documents commerciaux</li>
+                            <li class="d-inline-block d-md-block">Livres</li><br/>
+                            <li class="d-inline-block d-md-block">Catalogues</li><br/>
+                            <li class="d-inline-block d-md-block">Programmes</li><br/>
+                            <li class="d-inline-block d-md-block">Magazines</li><br/>
+                            <li class="d-inline-block d-md-block">Documents commerciaux</li><br/>
                             <li class="d-inline-block d-md-block">Plaquettes et pochettes</li>
                         </ul>
                     </div>
                     <div class="oveflow-hidden">
                         <div data-zanim-xs='{"delay":0.5}'>
-                            <a class="btn btn-link pl-md-0 text-black font-weight-black" href="#">portfolio<span class="d-inline-block">&xrarr;</span></a>
+                            <a class="btn btn-link pl-md-0 text-black font-weight-black" href="{{ path('portfolio') }}#">portfolio<span class="d-inline-block">&xrarr;</span></a>
                         </div>
                     </div>
                 </div>
@@ -92,21 +91,21 @@
                     </div>
                     <div class="oveflow-hidden">
                         <ul class="style-check pl-0" data-zanim-xs='{"delay":0.4}'>
-                            <li class="d-inline-block d-md-block">Logotypes</li>
-                            <li class="d-inline-block d-md-block">Identité de marque</li>
-                            <li class="d-inline-block d-md-block">Supports de communication</li>
+                            <li class="d-inline-block d-md-block">Logotypes</li><br/>
+                            <li class="d-inline-block d-md-block">Identité de marque</li><br/>
+                            <li class="d-inline-block d-md-block">Supports de communication</li><br/>
                             <li class="d-inline-block d-md-block">Design éditorial</li>
                         </ul>
                     </div>
                     <div class="oveflow-hidden">
                         <div data-zanim-xs='{"delay":0.5}'>
-                            <a class="btn btn-link pl-md-0 text-black font-weight-black" href="#">portfolio<span class="d-inline-block">&xrarr;</span></a>
+                            <a class="btn btn-link pl-md-0 text-black font-weight-black" href="{{path('portfolio')}}">portfolio<span class="d-inline-block">&xrarr;</span></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- WEB -->
-                <div class="col-10 col-md-6 col-lg-4 pl-lg-6 mt-6 mt-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                <div class="col-10 col-md-6 col-lg-4 px-lg-4 mt-6 mt-md-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                     <img class="mb-3" src="{{ asset('img/icons/web.svg') }}" alt="" width="120" height="120" />
                     <div class="overflow-hidden">
                         <h2 data-zanim-xs='{"delay":0.1}'>Web</h2>
@@ -117,21 +116,23 @@
 
                     <div class="oveflow-hidden">
                         <ul class="style-check pl-0" data-zanim-xs='{"delay":0.4}'>
-                            <li class="d-inline-block d-md-block">Site vitrine</li>
-                            <li class="d-inline-block d-md-block">Site E-commerce</li>
-                            <li class="d-inline-block d-md-block">Réseaux sociaux</li>
-                            <li class="d-inline-block d-md-block">Stratégie numérique</li>
-                            <li class="d-inline-block d-md-block">Référencement SEO</li>
+                            <li class="d-inline-block d-md-block">Site vitrine</li><br/>
+                            <li class="d-inline-block d-md-block">Site E-commerce</li><br/>
+                            <li class="d-inline-block d-md-block">Réseaux sociaux</li><br/>
+                            <li class="d-inline-block d-md-block">Stratégie numérique</li><br/>
+                            <li class="d-inline-block d-md-block">Référencement SEO</li><br/>
                             <li class="d-inline-block d-md-block">Gestion de contenus</li>
                         </ul>
                     </div>
 
                     <div class="oveflow-hidden">
                         <div data-zanim-xs='{"delay":0.5}'>
-                            <a class="btn btn-link pl-md-0 text-black font-weight-black" href="#">portfolio<span class="d-inline-block">&xrarr;</span></a>
+                            <a class="btn btn-link pl-md-0 text-black font-weight-black" href="{{ path('portfolio')}}">portfolio<span class="d-inline-block">&xrarr;</span></a>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
         <!-- end of .container-->
@@ -194,7 +195,7 @@
                         </div>
                         <div class="col-lg-6 border-lg-left border-lg-bottom border-300 pb-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
                             <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">01</span>
-                                <h3>analiser</h3>
+                                <h3>analyser</h3>
                                     <h4 class="text-serif font-weight-light font-italic mb-0 text-600" data-zanim-xs="{&quot;delay&quot;:0.2}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">un plan de communication intelligent</h4>
                                 <p>L’analyse commence par connaître votre projet et vos objectifs. Nous étudions les forces, faiblesses, opportunités et menaces qui se présentent, identifions les ressources et les cibles potentielles. Ensuite nous définissons un plan stratégique, avec des priorités et des objectifs ponctuels.</p>
                             </div>

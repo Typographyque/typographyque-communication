@@ -520,10 +520,10 @@ spUtils.$document.ready(function () {
         animateMenu();
       };
 
-      if ($this.hasClass('fancynav-link') && getAttributes($this).attrs.includes('data-fancyscroll')) {
+      if ($this.hasClass('fancynav-link') && getAttributes($this).attrs.indexOf('data-fancyscroll') >= 0) {
         fancyscroll($("#" + getAttributes($this).attrsObj.href.split('#')[1]), $this);
         return;
-      } else if ($this.parent().hasClass('fancynav-link') && getAttributes($this.parent()).attrs.includes('data-fancyscroll')) {
+      } else if ($this.parent().hasClass('fancynav-link') && getAttributes($this.parent()).attrs.indexOf('data-fancyscroll') >= 0) {
         fancyscroll($("#" + getAttributes($this.parent()).attrsObj.href.split('#')[1]), $this.parent());
         return;
       } // Keeping the menu open on ctrl/cmd + click
@@ -2176,43 +2176,6 @@ spUtils.$document.ready(function () {
     };
 
     if (!spDetector.isIE && !spDetector.isIE11 && !spDetector.isPuppeteer) callRellax();
-  }
-});
-/*-----------------------------------------------
-|   Remodal [video lightbox]
------------------------------------------------*/
-
-spUtils.$document.ready(function () {
-  var $videoModals = $('.video-modal');
-
-  if ($videoModals.length) {
-    spUtils.$body.after("\n      <div id='videoModal' class='remodal remodal-video'>\n        <button data-remodal-action='close' class='remodal-close'></button>\n        <div class='embed-responsive embed-responsive-16by9'>\n          <div id='videoModalIframeWrapper'></div>\n        </div>\n      </div>\n    ");
-    var $videoModal = $('#videoModal').remodal();
-    var $videoModalIframeWrapper = $('#videoModalIframeWrapper');
-    $videoModals.each(function (index, value) {
-      $(value).on('click', function (e) {
-        e.preventDefault();
-        var $this = $(e.currentTarget);
-        var ytId = $this.attr('href').split('/');
-        var start = $this.data('start');
-        var end = $this.data('end');
-
-        if (ytId[2] === 'www.youtube.com') {
-          $videoModalIframeWrapper.html("<iframe id='videoModalIframe' src='//www.youtube.com/embed/" + ytId[3].split('?v=')[1] + "?rel=0&amp;autoplay=1&amp;enablejsapi=0&amp;start=" + start + "&ampend=" + end + "' allowfullscreen' frameborder='0' class='embed-responsive-item hide'></iframe>");
-        } else if (ytId[2] === 'vimeo.com') {
-          $videoModalIframeWrapper.html("<iframe id='videoModalIframe' src='https://player.vimeo.com/video/" + ytId[3] + "?autoplay=1&title=0&byline=0&portrait=0 ?autoplay=1&title=0&byline=0&portrait=0 hide'></iframe>");
-        }
-
-        $videoModal.open();
-      });
-    });
-    spUtils.$document.on('closed', '.remodal', function (e) {
-      var $this = $(e.currentTarget);
-
-      if ($this.attr('id') === 'videoModal') {
-        $videoModalIframeWrapper.html('');
-      }
-    });
   }
 });
 /*-----------------------------------------------

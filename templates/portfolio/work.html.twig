@@ -1,0 +1,111 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-0">
+
+        <div class="bg-holder overlay" style="background-image:url({{ asset('img/portfolio/ombu-editions.jpg') }});" data-zanim-xs='{"delay":0.4,"animation":"zoom-out"}' data-zanim-trigger="scroll">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+            <div class="row align-items-end min-vh-100">
+                <div class="col-lg-8 mb-6">
+                    <h2 class="text-white display-4 fs-3 fs-md-4" data-zanim-xs='{"delay":0.6}' data-zanim-trigger="scroll">Titre du travail</h2>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col">
+                                <a class="text-sans-serif text-500" href="#">May 15, 2018</a>
+                            </div>
+                        </div>
+
+                        <h3 class="mt-4">{{ work.title }}</h3>
+                        <p class="mt-4">You just landed in Paris, the euro trip you’ve always dreamed of! After fighting with the street signs and foreign language, you finally exchange keys and smiles with your Airbnb host and drop off your bags.</p>
+
+                        <p class="mt-4">
+                            {{ work.description }}
+                        </p>
+
+                        {{ work.description | raw }}
+
+
+                        <div class="row">
+                            <iframe src="//v.calameo.com/?bkcode=0050997910e44af823b82&mode=mini&clickto=view&autoflip=4&clicktarget=_blank" width="1000" height="625" frameborder="0" scrolling="no" allowtransparency allowfullscreen style="margin:0 auto;"></iframe>
+                        </div>
+
+                        <p class="mt-4">The first thing you do is visit the Eiffel Tower, which has been tempting you the whole time, peeking through the city’s legendary architecture. As you walk up to it, you see the familiar yet astonishing structure, defying you with its scale. There it is — you’ve seen it in pictures countless times, but this is different.</p>
+                        <img class="d-block mt-5 w-100" src="{{ asset('img/headers/bigcartel.jpg') }}" alt="">
+                        <p class="pl-4 my-6 border-left border-500 border-2x font-italic font-weight-normal gray-600 lead">When shopping around for other companies that would allow Richard to keep his pride, he comes across the forward-thinking Flutterbug, who wants Richard to lead engineering on a fantastical new technology that seems poised to change the world. That technology, of course, allows you to look in a camera that puts a fake mustache on your face.</p>
+
+                        <div class="my-6">
+                            <div class="row">
+                                <div class="col-5 pr-1">
+                                    <a href="{{ asset('img/portfolio/02-f.jpg') }}" data-fancybox="group" data-caption="Image caption">
+                                        <img class="rounded w-100 h-100 fit-cover" src="{{ asset('img/portfolio/02.jpg') }}" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-7 pl-1">
+                                    <a href="{{ asset('img/portfolio/01-f.jpg') }}" data-fancybox="group" data-caption="Image caption">
+                                        <img class="rounded w-100 h-100 fit-cover" src="{{ asset('img/portfolio/01.jpg') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-6 pr-1">
+                                    <a href="{{ asset('img/portfolio/03-f.jpg') }}" data-fancybox="group" data-caption="Image caption">
+                                        <img class="rounded w-100 h-100 fit-cover" src="{{ asset('img/portfolio/03.jpg') }}" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-6 pl-1">
+                                    <a href="{{ asset('img/portfolio/05-f.jpg') }}" data-fancybox="group" data-caption="Image caption">
+                                        <img class="rounded w-100 h-100 fit-cover" src="{{ asset('img/portfolio/05.jpg') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4">In The Chemical Brothers’ music video ‘Wide Open', Dom &amp; Nic explore a surprisingly captivating motion capture technique where the main character slowly reveals a body made of a synthetic, see-through material that is then anthropomorphized
+                            through the masterful dance of Sonoya Mizuno.</p>
+
+                    </div>
+
+                </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+{% endblock %}
+
+
+
+{% block javascripts %}
+
+
+
+{% endblock %}
