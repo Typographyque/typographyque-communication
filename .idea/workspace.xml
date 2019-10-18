@@ -2,54 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ccec81-e9a9-4d6e-a261-56b00c881432" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPortfolioController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/portfolio/work.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/typographyque-communication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/typographyque-communication.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/WorkType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/portfolio/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/portfolio/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/portfolio/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/portfolio/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base-admin.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/theme-rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme-rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/theme-rtl.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/theme.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/theme.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/typed.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/typed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/lightbox2/css/lightbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lightbox2/css/lightbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/lightbox2/css/lightbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lightbox2/css/lightbox.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox-plus-jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox-plus-jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox-plus-jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox-plus-jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox-plus-jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox-plus-jquery.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/lightbox2/js/lightbox.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.min.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.min.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.min.mjs.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.min.mjs.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.min.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.min.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.min.mjs.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.min.mjs.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/plyr/plyr.polyfilled.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/prismjs/prism.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/prismjs/prism.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PortfolioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/services.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/services.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/slider.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/slider.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/portfolio/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portfolio/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminPortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPortfolioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Work.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Work.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,29 +61,6 @@
       </path>
     </expand>
     <select />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>This value is too short. It should have 10 characters or more.</find>
-      <find>default-members</find>
-      <find>TweenLite.js</find>
-      <find>TweenLite.min.js</find>
-      <find>TweenLite.min</find>
-      <find>TweenLite</find>
-      <find>_gsScope._gsDefine(&quot;TweenMax&quot;,</find>
-      <find>/*!</find>
-      <find>spUtils</find>
-      <find>$carousel.each(function(index,value)</find>
-      <find>$carousel.each</find>
-      <find>carousel</find>
-      <find>owl-carousel</find>
-      <find>owl-theme</find>
-      <find>carou</find>
-      <find>car</find>
-      <find>owl-ca</find>
-      <find>Stickyfill</find>
-      <find>From thrift furniture</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -337,18 +276,9 @@
       <workItem from="1569510296595" duration="4247000" />
       <workItem from="1569557137909" duration="1217000" />
       <workItem from="1571050182494" duration="2244000" />
-      <workItem from="1571142110460" duration="31510000" />
+      <workItem from="1571142110460" duration="52906000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />

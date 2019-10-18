@@ -1,0 +1,62 @@
+{% extends 'base-admin.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="bg-light pt-8 pb-7 pt-lg-6 pb-lg-5 pt-xl-8 pb-xl-7">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <h2 class="fs-3 fs-sm-4">Create</h2>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-0">
+
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="py-6">
+                    <h4>Créer une nouvelle publication</h4>
+
+                    {{ include('admin/portfolio/_form.html.twig', {form: form, button: 'Créer'}) }}
+
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
+
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#work_description' ) )
+            .then( editor => {
+                console.log( editor );
+            } )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+{% endblock %}
+
+

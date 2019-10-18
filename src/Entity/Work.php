@@ -4,9 +4,12 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Cocur\Slugify\Slugify;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\WorkRepository")
+ * @UniqueEntity("title")
  */
 class Work
 {
@@ -18,6 +21,7 @@ class Work
     private $id;
 
     /**
+     * @Assert\Length(min="5", max="255")
      * @ORM\Column(type="string", length=255)
      */
     private $title;
@@ -43,7 +47,7 @@ class Work
     private $team;
 
     /**
-     * @ORM\Column(type="boolean", options={"default": false})
+     * @ORM\Column(type="boolean", nullable=true, options={"default": false})
      */
     private $public = false;
 

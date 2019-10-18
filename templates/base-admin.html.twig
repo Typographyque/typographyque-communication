@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon//favicon-16x16.png">
+    <link rel="manifest" href="./img/icon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>{% block title %}Typographyque | communication{% endblock %}</title>
+
+    <!-- ===============================================-->
+    <!--    STYLESHEETS-->
+    <!-- ===============================================-->
+
+    <link href="{{ asset('lib/loaders.css/loaders.min.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
+    <link href="{{ asset('lib/fancybox/jquery.fancybox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('lib/owl.carousel/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/theme.css') }}" rel="stylesheet">
+
+    {% block stylesheets %}{% endblock %}
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-sparrow">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="{{ asset('img/iso_typographyque_blanc.svg') }}" alt="Typographyque" height="35" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tableau de bord</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{path('admin.portfolio')}}">Portfolio </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body class="has-sidemenu overflow-hidden-x">
+
+
+<!-- ===============================================-->
+<!--    Main Content-->
+<!-- ===============================================-->
+<main class="main min-vh-100" id="top">
+
+    <!-- ============================================-->
+    <!-- Preloader ==================================-->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="line-scale-pulse-out-rapid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================-->
+    <!-- End of Preloader ===========================-->
+
+    {% block body %}{% endblock %}
+
+</main>
+<!-- ===============================================-->
+<!--    End of Main Content-->
+<!-- ===============================================-->
+
+
+
+</section>
+<!-- <section> close ============================-->
+<!-- ============================================-->
+
+<!--===============================================-->
+<!--    Footer-->
+<!--===============================================-->
+<footer class="footer bg-black text-600 py-4 text-sans-serif text-center overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-2">
+                <a class="indicator indicator-up" href="#top" data-fancyscroll="data-fancyscroll"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.9}'></span><span class="indicator-arrow indicator-arrow-two" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":1.05}'></span></a>
+            </div>
+            <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
+                <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Typographyque | 2019</p>
+            </div>
+            <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
+                <img class="guarda" src="{{ asset('img/guarda_color.svg') }}" alt="" height="10">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/popper.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/plugins.min.js') }}"></script>
+<script src="{{ asset('lib/loaders.css/loaders.css.js') }}/"></script>
+<script src="{{ asset('js/stickyfill.min.js') }}/"></script>
+<script src="{{ asset('lib/jtap/jquery.tap.js') }}"></script>
+<script src="{{ asset('js/rellax.min.js') }}"></script>
+<script src="{{ asset('lib/fancybox/jquery.fancybox.min.js') }}"></script>
+<script src="{{ asset('lib/owl.carousel/owl.carousel.js') }}/"></script>
+<script src="{{ asset('js/theme.js') }}"></script>
+
+
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>
+
