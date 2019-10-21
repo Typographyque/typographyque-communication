@@ -1,0 +1,85 @@
+{% extends 'base-admin.html.twig' %}
+
+{% block title %}'Portfolio'{% endblock %}
+
+{% block body %}
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-8 pb-7 pt-lg-6 pb-lg-5 pt-xl-8 pb-xl-7" style="background-image:url({{ asset('img/headers/header-promotion.jpg') }});">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <h1 class="fs-3 fs-sm-4">Tableau de bord</h1>
+                    <p class="lead">Lo más terrible se aprende enseguida y lo hermoso nos cuesta la vida.</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+    <section class="py-0">
+        <div class="container">
+            <div class="row justify-content-between">
+
+
+
+                <div class="mt-5 text-center">
+                    <a href="{{ path('admin.work.new') }}" class="btn btn-secondary">Créer un nouveau élément</a>
+
+                </div>
+                <!-- todo les messages flash ne fonctionent pas -->
+                {% for message in app.flashes('succes') %}
+                    <div class="mt-5 alert alert-info">
+                        {{ message }}
+                    </div>
+
+                {% endfor %}
+                <div class="table-responsive mt-3">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Titre</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for work in works %}
+                            <tr>
+                                <td>{{ work.id }}</td>
+                                <td>{{ work.title }}</td>
+                                <td class="text-right">
+                                    <a href="{{ path('admin.work.edit', {id: work.id}) }}" class="btn btn-secondary">Editer</a>
+                                    <form method="post" action="{{ path('admin.work.delete', {id: work.id}) }}" style="display: inline-block">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ work.id) }}">
+                                        <button class="btn btn-danger">Supprimer</button>
+
+                                        <div class="form-group" style="display: inline-block">
+                                            <div class="form-check">
+                                                <input class="form-check-input " type="checkbox" required>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+
+{% endblock %}

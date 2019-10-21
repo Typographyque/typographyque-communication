@@ -19,6 +19,23 @@ class WorkRepository extends ServiceEntityRepository
         parent::__construct($registry, Work::class);
     }
 
+    public function findLasted()
+    {
+        return $this->createQueryBuilder('work')
+            ->orderBy('work.id', 'DESC')
+            ->setMaxResults(5)
+            ->getQuery()
+            ->getResult();
+    }
+
+    public function findAllDesc()
+    {
+        return $this->createQueryBuilder('work')
+            ->orderBy('work.id', 'DESC')
+            ->getQuery()
+            ->getResult();
+    }
+
     // /**
     //  * @return Work[] Returns an array of Work objects
     //  */
@@ -47,4 +64,6 @@ class WorkRepository extends ServiceEntityRepository
         ;
     }
     */
+
+
 }

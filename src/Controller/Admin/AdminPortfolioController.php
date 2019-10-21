@@ -37,7 +37,7 @@ Class AdminPortfolioController extends AbstractController
      */
     public function index()
     {
-        $works = $this->repository->findAll();
+        $works = $this->repository->findAllDesc();
         return $this->render("admin/portfolio/index.html.twig", compact('works'));
     }
 

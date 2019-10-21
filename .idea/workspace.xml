@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ccec81-e9a9-4d6e-a261-56b00c881432" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form/WorkType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/portfolio/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/portfolio/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/portfolio/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/portfolio/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base-admin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/signin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminPortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPortfolioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Work.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Work.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/WorkRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/WorkRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base-admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base-admin.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +184,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -201,18 +198,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\typographyque-communication\public\img" />
+      <recent name="C:\wamp64\www\typographyque-communication\templates" />
       <recent name="C:\wamp64\www\typographyque-communication\public\lib" />
       <recent name="C:\wamp64\www\typographyque-communication\public\js" />
       <recent name="C:\wamp64\www\typographyque-communication\public\css" />
-      <recent name="C:\wamp64\www\typographyque-communication\public\img\portfolio" />
-      <recent name="C:\wamp64\www\typographyque-communication\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\typographyque-communication\templates\login" />
+      <recent name="C:\wamp64\www\typographyque-communication\src\Controller\Admin" />
       <recent name="C:\wamp64\www\typographyque-communication\public\img\portfolio" />
       <recent name="C:\wamp64\www\typographyque-communication\public\css" />
       <recent name="C:\wamp64\www\typographyque-communication\assets\lib\owl.carousel" />
-      <recent name="C:\wamp64\www\typographyque-communication\assets\lib\owl.carousel\css" />
-      <recent name="C:\wamp64\www\typographyque-communication\assets\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -276,7 +273,7 @@
       <workItem from="1569510296595" duration="4247000" />
       <workItem from="1569557137909" duration="1217000" />
       <workItem from="1571050182494" duration="2244000" />
-      <workItem from="1571142110460" duration="52906000" />
+      <workItem from="1571142110460" duration="75511000" />
     </task>
     <servers />
   </component>

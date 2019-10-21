@@ -1,0 +1,45 @@
+{% extends 'base-admin.html.twig' %}
+
+{% block body %}
+
+<!-- ============================================-->
+<!-- <section> begin ============================-->
+<section class="pt-8 pb-7 pt-lg-6 pb-lg-5 pt-xl-8 pb-xl-7" style="background-image:url({{ asset('img/headers/header-promotion.jpg') }});">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xl-5">
+                <h1 class="fs-3 fs-sm-4">Users</h1>
+                <p class="lead">Lo más terrible se aprende enseguida y lo hermoso nos cuesta la vida.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end of .container-->
+
+</section>
+
+<!-- ============================================-->
+<!-- <section> begin ============================-->
+
+<section class="py-0">
+
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="py-6">
+                <h4>Ajouter un administrateur</h4>
+
+                {{ form_start(form) }}
+
+                {{ form_widget(form) }}
+
+                <button type="submit" class="btn btn-secondary">Ajouter</button>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+
