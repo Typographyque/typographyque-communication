@@ -2,13 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ccec81-e9a9-4d6e-a261-56b00c881432" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/signin.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ecommerce/9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminPortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPortfolioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/WorkRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/WorkRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base-admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base-admin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/Panneau-fredd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/portfolio/Panneau-fredd.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/cuadernos-ayotzinapa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/portfolio/cuadernos-ayotzinapa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/fredd_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/mamma-roma-f.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/portfolio/mamma-roma-f.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/mamma-roma.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/occupation-visuelle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/portfolio/occupation-visuelle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/ombu-editions.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/portfolio/ombu-editions.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/retouches.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/portfolio/retouches.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PortfolioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/portfolio/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portfolio/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,7 +294,9 @@
       <workItem from="1569510296595" duration="4247000" />
       <workItem from="1569557137909" duration="1217000" />
       <workItem from="1571050182494" duration="2244000" />
-      <workItem from="1571142110460" duration="75511000" />
+      <workItem from="1571142110460" duration="88053000" />
+      <workItem from="1572962841731" duration="8252000" />
+      <workItem from="1574518101155" duration="3891000" />
     </task>
     <servers />
   </component>

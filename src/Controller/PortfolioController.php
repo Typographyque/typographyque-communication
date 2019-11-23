@@ -20,6 +20,7 @@ class PortfolioController extends AbstractController
 
         return $this->render('portfolio/index.html.twig', [
             'works' => $works,
+            dump($works)
         ]);
     }
 
